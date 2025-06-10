@@ -3,20 +3,23 @@ package api_video.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
 @Document(collection = "room")
 public class Room {
     
     @Id
-    private String id_room;
+    private long id_room;
     private String nm_room;
     private String ds_room;
     private String nu_capacidade;
 
-    public String getId_room() {
+    public long getId_room() {
         return id_room;
     }
     
-    public void setId_room(String id_room) {
+    public void setId_room(long id_room) {
         this.id_room = id_room;
     }
 

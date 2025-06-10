@@ -9,6 +9,6 @@ import jakarta.transaction.Transactional;
 
 @Repository
 @Transactional
-public interface RoomRepository   extends MongoRepository<Room, String> {
+public interface RoomRepository   extends MongoRepository<Room, Long> {
 
 }
